@@ -54,7 +54,7 @@ func TestDataSerialization(t *testing.T) {
 		}
 
 		if !reflect.DeepEqual(v.In, out) {
-			t.Errorf("got unexpected datastore roundtrip.\n\tgot %v\n\texpected %v", out, v.In)
+			t.Errorf("got unexpected datastore roundtrip.\n\tgot %+v\n\texpected %+v", out, v.In)
 		}
 	}
 }
